@@ -157,7 +157,13 @@
         .nav-links a:hover::after {
             width: 100%;
         }
-
+        .nav-links a.no-line:hover::after {
+    width: 0; 
+    /* display: none; is also a great alternative here */
+}
+        .visible-btn{
+            background: linear-gradient(135deg, var(--amber), var(--sage-light)) !important;
+        }
         .btn-primary {
             background: linear-gradient(135deg, var(--sage), var(--sage-light));
             color: white !important;
@@ -2279,7 +2285,7 @@
             <p class="cta-sub">Schedule a free 15-minute consultation today. No pressure, no commitment — just a
                 conversation about how we can help.</p>
             <div class="cta-buttons">
-                <a href="mental-book.html" class="btn-primary">
+                <a href="mental-book.html" class="btn-primary visible-btn">
                     <i class="fa-regular fa-calendar-check"></i>
                     Book Free Consultation
                 </a>
